@@ -10,6 +10,7 @@ import despote.lib.RefStrings
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.Mod.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -18,6 +19,8 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = RefStrings.MODID , name = RefStrings.NAME , version = RefStrings.VERSION)
 
 public class Despote {
+  
+  @SidedProxy (clientSide = RefStrings.CLIENTSIDE , serverSide = RefStrings.SERVERSIDE)
   
   @EventHandler
   public static void PreLoad(FMLPreInitializationEvent PreEvent){
