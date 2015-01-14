@@ -6,7 +6,8 @@
  * http://www.gnu.org/licenses/lgpl-3.0.txt
  ******************************************************************************/
 
-import despote.lib.RefStrings
+import despote.lib.RefStrings;
+import despote.proxy.*;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -21,10 +22,11 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 public class Despote {
   
   @SidedProxy (clientSide = RefStrings.CLIENTSIDE , serverSide = RefStrings.SERVERSIDE)
+  public static ServerProxy proxy;
   
   @EventHandler
   public static void PreLoad(FMLPreInitializationEvent PreEvent){
-    
+    proxy.registerRenderInfo();
   }
   
   @EventHandler
