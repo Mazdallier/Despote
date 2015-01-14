@@ -1,5 +1,7 @@
 package despote.proxy;
 
-public class ClientProxy {
+import despote.proxy.ServerProxy;
+
+public class ClientProxy extend ServeurProxy{
 
 }
