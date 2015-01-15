@@ -18,6 +18,6 @@ public class DespotiCompass {
   }
   
   public static void registerItem(){
-    GameRegistery.registerItem (dCompass;dCompass.getUnlocalizedName());
+    GameRegistery.registerItem(dCompass, dCompass.getUnlocalizedName());
   }
 }
