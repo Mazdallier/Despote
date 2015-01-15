@@ -8,6 +8,7 @@
 
 import despote.lib.RefStrings;
 import despote.proxy.*;
+import despote.item.*;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -26,6 +27,7 @@ public class Despote {
   
   @EventHandler
   public static void PreLoad(FMLPreInitializationEvent PreEvent){
+    DespotiCompass.mainRegistry();
     proxy.registerRenderInfo();
   }
   
