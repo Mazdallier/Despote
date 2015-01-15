@@ -1,5 +1,7 @@
 package despote.item;
 
+import despote.lib.RefStrings;
+
 import cpw.mods.fml.common.registery.GameRegistery;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -14,7 +16,7 @@ public class DespotiCompass {
   public static Item dCompass;
   
   public static void initItem(){
-    dCompass = new Item().setUnlocalizedName("DespotiCompass").setCreativeTab(CreativeTabs.tabTools);
+    dCompass = new Item().setUnlocalizedName("DespotiCompass").setCreativeTab(CreativeTabs.tabTools).setTextureName(RefStrings.MODID + ":DespotiCompass");
   }
   
   public static void registerItem(){
