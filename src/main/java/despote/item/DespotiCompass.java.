@@ -1,4 +1,4 @@
-package despote.item
+package despote.item;
 
 public class DespotiCompass {
 
