@@ -1,3 +1,2 @@
 # Despote
-Mod minecraft
-To do : -setting up git into eclipse -build first item
+Mod minecraft \nTo do : -setting up git into eclipse -build first item
