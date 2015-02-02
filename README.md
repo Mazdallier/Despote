@@ -1,3 +1,3 @@
 # Despote
 Mod minecraft 
-To do : -setting up git into eclipse -build first item
+To do : -sync git into eclipse -Village detection
